@@ -12,17 +12,17 @@ How it works -
 
 "The Truth" is sperated into 3 app categories with self-explantory names.
 
-Employr - Should I work here? 
+Employr -
 
-Employr aims to warn prospective employees about toxic workplaces. For far too long companies have kept workplace activities enclosed. We would only learn about these actions if someone talked
+* Employr aims to warn prospective employees about toxic workplaces. For far too long companies have kept workplace activities enclosed. We would only learn about these actions if someone talked
 
 Koworkr -
 
-Koworkr aims to stop workplace abuse by embbeding itself into the framework of prospective employees, current employees, and Human Resources.
+* Koworkr aims to stop workplace abuse by embbeding itself into the framework of prospective employees, current employees, and Human Resources.
 
-Asshole - Hang around with a ball and chain; you'll eventually drag it. 
+Asshole - 
 
-Asshole aims to help others stay away from dregs and losers (men and women) in our society. These reviews come from verified eye witness accounts. 
+* Asshole aims to help others stay away from dregs and losers (men and women) in our society. These reviews come from verified eye witness accounts. 
 
 Who are symptoms of dregs and losers?
 * Inconsistent.
