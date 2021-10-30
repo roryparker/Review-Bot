@@ -33,20 +33,20 @@ if(isset($_POST['register_button'])) {
     $email = strip_tags($_POST['register_email']);  //Remove HTML tags
     $email = str_replace(' ', '', $email); // Removes spaces
     $email = ucfirst(strtolower($email)); //Uppercase first letter
-    $_SESSION['register_email'] = $email; // Stores the first name into a session variable
+    $_SESSION['register_email'] = $email; // Stores the email into a session variable
 
      // Registration form values for Email Confirmation
      $email_confirmation = strip_tags($_POST['register_email_confirmation']);  //Remove HTML tags
      $email_confirmation = str_replace(' ', '', $email_confirmation); // Removes spaces
      $email_confirmation = ucfirst(strtolower($email_confirmation)); //Uppercase first letter
-     $_SESSION['register_email_confirmation'] = $email_confirmation; // Stores the first name into a session variable
+     $_SESSION['register_email_confirmation'] = $email_confirmation; // Stores the email confirmation into a session variable
 
     // Registration form values for Password
-    $email_confirmation = strip_tags($_POST['register_password']);  //Remove HTML tags
+    $password = strip_tags($_POST['register_password']);  //Remove HTML tags
     $_SESSION['register_password'] = $password; // Stores the first name into a session variable
 
     // Registration form values for Password Confirmation
-    $email_confirmation = strip_tags($_POST['register_password_confirmation']);  //Remove HTML tags
+    $password_confirmation = strip_tags($_POST['register_password_confirmation']);  //Remove HTML tags
     $_SESSION['register_password_confirmation'] = $password_confirmation; // Stores the first name into a session variable
 
     $date = date("D-F-Y");
@@ -113,6 +113,20 @@ if(isset($_POST['register_button'])) {
             $username = $username . "_" . $i;
             $check_username_query = mysqli_query($con, "SELECT username FROM users WHERE username='$username");
         }
+
+        //Profile photo
+        $rand = rand(1, 30);
+
+        if ($rand == 1) {
+            $profile_pic = "C:\xampp\htdocs\The Truth\assets\images\profile_pics\female1.jpg"; 
+        } else if ($rand == 2) {
+            $profile_pic = "C:\xampp\htdocs\The Truth\assets\images\profile_pics\female2.jpg";
+
+            $query = mysqli_query($con, "INSERT INTO users VALUES ('', '$first_name', '$last_name', '$username', '$email', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
+        }
+        
+
+        
     }
 }
 ?>
