@@ -43,11 +43,11 @@ if(isset($_POST['register_button'])) {
 
     // Registration form values for Password
     $password = strip_tags($_POST['register_password']);  //Remove HTML tags
-    $_SESSION['register_password'] = $password; // Stores the first name into a session variable
+    $_SESSION['register_password'] = $password; // Stores the password into a session variable
 
     // Registration form values for Password Confirmation
     $password_confirmation = strip_tags($_POST['register_password_confirmation']);  //Remove HTML tags
-    $_SESSION['register_password_confirmation'] = $password_confirmation; // Stores the first name into a session variable
+    $_SESSION['register_password_confirmation'] = $password_confirmation; // Stores the password confirmation into a session variable
 
     $date = date("D-F-Y");
 
@@ -117,13 +117,14 @@ if(isset($_POST['register_button'])) {
         //Profile photo
         $rand = rand(1, 30);
 
-        if ($rand == 1) {
+        if ($rand == 1)
             $profile_pic = "C:\xampp\htdocs\The Truth\assets\images\profile_pics\female1.jpg"; 
-        } else if ($rand == 2) {
+        else if ($rand == 2)
             $profile_pic = "C:\xampp\htdocs\The Truth\assets\images\profile_pics\female2.jpg";
 
-            $query = mysqli_query($con, "INSERT INTO users VALUES ('', '$first_name', '$last_name', '$username', '$email', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
-        }
+        $query = mysqli_query($con, "INSERT INTO users VALUES ('', '$first_name', '$last_name', '$username', '$email', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
+        
+        
         
 
         
