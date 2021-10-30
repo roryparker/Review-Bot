@@ -1,10 +1,6 @@
 <?php 
-$con = new mysqli ("localhost", "root", "", "userdb");
+require 'config/config.php';
 
-if(mysqli_connect_errno()) {
-    echo "Error connecting: ". mysqli_connect_errno();
-}
-$query = mysqli_query($con, "INSERT INTO identification_table VALUES(NULL, 'Rory')");
 ?>
 
 <!DOCTYPE html>
