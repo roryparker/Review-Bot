@@ -2,9 +2,24 @@
 
 require 'config/config.php';
 require 'includes/form_handlers/register_handler.php';
+require 'includes/form_handlers/login_handler.php';
 
 ?>
 
+
+<form action="register.php" method="POST"> 
+    <input type="email" name="log_email" placeholder="Email Address" value=" <?php 
+        if (isset($_SESSION['log_email'])) { 
+            echo $_SESSION['log_email']; 
+        } ?>" required> 
+    <br>
+    <input type="password" name="log_password" placeholder="Password">
+    <br>
+    <input type="submit" name="login_button" placeholder="Login">
+    <br>
+
+    <?php if (in_array("Email or password was incorrect<br>", $error_array)) echo "Email or password was incorrect<br>" ?>
+</form>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +31,7 @@ require 'includes/form_handlers/register_handler.php';
 </head>
 <body>
 
-<form action="register.php" method="post">
+<form action="register.php" method="POST">
     <input type="text" name="register_first_name" placeholder="First Name" value="<?php if (isset($_SESSION['register_first_name'])) { echo $_SESSION['register_first_name']; } ?>" required>
     <br>
     <?php if(in_array("Your first name must be between 2 and 25 characters.<br>", $error_array)) echo "Your first name must be between 2 and 25 characters<br>"; ?>
