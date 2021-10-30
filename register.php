@@ -116,13 +116,15 @@ if(isset($_POST['register_button'])) {
 
         //Profile photo
         $rand = rand(1, 30);
+        $profile_pic = "";
 
-        if ($rand == 1)
-            $profile_pic = "C:\xampp\htdocs\The Truth\assets\images\profile_pics\female1.jpg"; 
-        else if ($rand == 2)
+        if ($rand == 1) {
+            $profile_pic = "C:\xampp\htdocs\The Truth\assets\images\profile_pics\female1.jpg";
+        } else if ($rand == 2) {
             $profile_pic = "C:\xampp\htdocs\The Truth\assets\images\profile_pics\female2.jpg";
+        }  // must determine male or female.
 
-        $query = mysqli_query($con, "INSERT INTO users VALUES ('', '$first_name', '$last_name', '$username', '$email', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
+    $query = mysqli_query($con, "INSERT INTO users VALUES ('', '$first_name', '$last_name', '$username', '$email', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
         
         
         
