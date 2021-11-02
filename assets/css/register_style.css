@@ -1,0 +1,9 @@
+form {
+    text-align: center;
+}
+
+.wrapper {
+    background-image: url("C:\xampp\htdocs\The Truth\assets\images\background\black-linear-social-media.jpg");
+    background-size: 100%;
+    background-attachment: scroll;
+}
