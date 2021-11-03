@@ -1,9 +1,106 @@
-form {
-    text-align: center;
-}
-
-.wrapper {
-    background-image: url("C:\xampp\htdocs\The Truth\assets\images\background\black-linear-social-media.jpg");
-    background-size: 100%;
-    background-attachment: scroll;
-}
+    @font-face {
+        font-family: 'Alba';
+        src: url(../fonts/ALBA____.TTF);
+    }
+    
+    @font-face {
+        font-family: 'AlbaM';
+        src: url(../fonts/ALBAM___.TTF);
+    }
+    
+    form {
+        text-align: center;
+        position: relative;
+    }
+    
+    @media (max-width: 800px) {
+        .flex-container {
+            flex-direction: column;
+        }
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: lightcoral
+    }
+    
+    body {
+        /* background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../images/background/black-linear-social-media.jpg');
+    width: 100%;
+    height: 100%;
+    min-width: 950px; */
+    }
+    
+    .wrapper {
+        /* background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/background/black-linear-social-media.jpg');
+    width: 100%;
+    height: 100%;
+    min-width: 950px; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .login_box {
+        font-family: 'Alba', sans-serif;
+        top: 7%;
+        padding: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 25%;
+        background-color: white;
+        border: 2px solid red;
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+    
+    .login_header {
+        width: 100%;
+        height: 90px;
+        text-align: center;
+        opacity: 0.9;
+        padding-bottom: 45px;
+        color: red;
+        border-radius: 10px;
+        text-shadow: red 0.5px 0.5px 0px;
+    }
+    
+    .login_header h3 {}
+    
+    input[type="submit"] {
+        background-color: gray;
+        border: 1px solid;
+        border-radius: 10px;
+        margin: 5px 0 10px 0;
+        padding: 5px 10px 5px 10px
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        border: 1px solid lightgray;
+        margin-top: 5px;
+        width: 70%;
+        height: 35px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+    
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    input[type="password"]:hover {
+        border-color: red;
+    }
+    
+    #second {
+        display: none
+    }
