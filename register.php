@@ -22,6 +22,23 @@ require 'includes/form_handlers/login_handler.php';
 
 <body>
 
+        <?php                         
+
+            // if(isset($_POST['register_button'])) {   // Code block doesn't work
+            //     echo '
+            //     <script>
+
+            //     $(document).ready(function() {
+            //         $("#first").hide();
+            //         $("#second").show();
+            //     });
+
+            //     </script>
+            //     ';
+            // }
+
+        ?> 
+
     <div class="wrapper">
 
         <div class="login_box">
