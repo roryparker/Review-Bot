@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Alba';
+    src: url(../fonts/ALBA____.TTF);
+}
+
+@font-face {
+    font-family: 'AlbaM';
+    src: url(../fonts/ALBAM___.TTF);
+}
+
+body {
+    line: height 17px;
+}
+
+.top_bar {
+    width: 100%;
+    height: 40px;
+    background-color: #d35400;
+    border-bottom: 5px solid #f39c12;
+    margin: 0 0 10px 0;
+    display: inline-flex;
+}
+
+.logo a {
+    font-family: 'Alba', sans-serif;
+    margin-left: 10px;
+    font-size: 30;
+    position: relative;
+    top: 9px;
+    text-shadow: #73B6E2 0.5px 0.5px 0px;
+    color: #ffffff
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+    right: 1px;
+    position: absolute;
+    margin: 10px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #
+}
