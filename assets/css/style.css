@@ -9,7 +9,7 @@
 }
 
 body {
-    line: height 17px;
+    line-height: 17px;
 }
 
 .top_bar {
@@ -19,6 +19,10 @@ body {
     border-bottom: 5px solid #f39c12;
     margin: 0 0 10px 0;
     display: inline-flex;
+    position: fixed;
+    z-index: 10px;
+    position: fixed;
+    z-index: 10;
 }
 
 .logo a {
@@ -50,5 +54,40 @@ nav a {
 }
 
 nav a:hover {
-    border-bottom: 1px solid #
+    border-bottom: 1px solid;
+}
+
+.wrapper {
+    margin: 0 auto;
+    top: 50px;
+    position: relative;
+    padding: 0 10px;
+    width: 75%;
+    min-width: 950px;
+}
+
+.column {
+    background-color: white;
+    padding: 10px 10px;
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px red;
+}
+
+.user_details {
+    width: 250px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.user_details_left_right {
+    width: 125px;
+    display: inline-block;
+    position: absolute;
+}
+
+.user_details img {
+    height: 125px;
+    border-radius: 5px;
+    margin-right: 5px;
 }
