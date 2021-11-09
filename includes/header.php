@@ -40,7 +40,7 @@ else {
         </div>
 
         <nav>
-            <a href="#"> <i class="fa-solid fa-house"></i> </a>
+            <a href="<?php echo $userLoggedIn; ?>"> <i class="fa-solid fa-house"></i> </a> <!-- links to profile page -->
             <a href="#"> <i class="fa-solid fa-user-group"></i> </a>
             <a href="#"> <i class="fa-solid fa-comment"></i> </a>
             <a href="#"> <i class="fa-solid fa-people-arrows-left-right"></i> </a>
