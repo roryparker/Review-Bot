@@ -131,10 +131,9 @@ textarea:focus {
     position: absolute;
     outline: 0;
     margin: 0;
-    <<<<<<< HEAD=======
 }
 
 .post_form input [type="submit"]:active {
     padding: 5px 4px 4px 5px;
-    color: yellow >>>>>>> 859705fbad0f5830444e81d11e3d3da6ee3bb1ab
+    color: yellow;
 }
