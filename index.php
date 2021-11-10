@@ -5,14 +5,14 @@ include("includes/form_handlers/register_handler.php");
 ?>
 
     <div class="user_details column">
-        
+
         <a href="#" img src="<?php echo isset($user['profile_pic']); ?>"> </a> <!-- links to profile page -->
 
         <div class="user_details_left_right">
             <a href="<?php echo $userLoggedIn; ?>"> <!-- links to profile page -->
 
                 <?php 
-                    echo isset($user['first_name']) . " " . isset($user['last_name']);
+                    echo isset($user['first_name']) . " " . isset($user['last_name']);            // added isset to correct $user errors in php 7 (https://stackoverflow.com/questions/66949863/warning-undefined-array-key)
                 ?>
             </a>
             <br>
