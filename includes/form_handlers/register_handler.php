@@ -7,7 +7,7 @@ $email_confirmation = ""; // Email Confirmation name of the user
 $password = ""; // Password of the user
 $password_confirmation = ""; // Password Confirmation of the user
 $error_array = array(); // Error array holds the error messages
-$user = array();
+$user = array();                                                // Added user array to help with errors on index page.
 
 if(isset($_POST['register_button'])) {
 
