@@ -5,10 +5,11 @@ include("includes/form_handlers/register_handler.php");
 ?>
 
     <div class="user_details column">
-        <a href="#" img src="<?php echo isset($user['profile_pic']); ?>"> </a>
+        
+        <a href="#" img src="<?php echo isset($user['profile_pic']); ?>"> </a> <!-- links to profile page -->
 
         <div class="user_details_left_right">
-            <a href="#">
+            <a href="<?php echo $userLoggedIn; ?>"> <!-- links to profile page -->
 
                 <?php 
                     echo isset($user['first_name']) . " " . isset($user['last_name']);
