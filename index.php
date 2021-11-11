@@ -1,6 +1,7 @@
 <?php
 include("includes/header.php");
 include("includes/form_handlers/register_handler.php");
+include("includes/classes/user/php")
 
 ?>
 
