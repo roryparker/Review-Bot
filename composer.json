@@ -1,5 +1,5 @@
 {
     "require": {
-        "php-cs-fixer/diff": "^2.0"
+        "squizlabs/php_codesniffer": "*"
     }
 }

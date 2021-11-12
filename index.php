@@ -1,7 +1,13 @@
 <?php
 include("includes/header.php");
 include("includes/form_handlers/register_handler.php");
-include("includes/classes/user/php")
+include("includes/classes/user.php");
+include("includes/classes/post.php");
+
+if (isset($_POST['post'])) {
+    $post = new Post($con, $userLoggedIn);
+    $post->submitPost($_POST['post_text'], 'none');
+}
 
 ?>
 
