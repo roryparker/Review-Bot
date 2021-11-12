@@ -1,0 +1,5 @@
+{
+    "require": {
+        "php-cs-fixer/diff": "^2.0"
+    }
+}
