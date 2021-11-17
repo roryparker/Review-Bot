@@ -28,6 +28,12 @@ class post
     {
         $body = strip_tags($body); //removes html tags
         $body = mysqli_real_escape_string($this->con, $body);
+        
+        //checks body string and replaces return with new line
+        $body = str_replace('\r\n', '\n', $body);
+        
+        // Look for any line break and replace with HTML line break.
+        $body = nl2br($body);
         $check_empty = preg_replace('/\s+/', '', $body); // deletes all spaces
 
         if ($check_empty != "") {
@@ -51,7 +57,11 @@ class post
             //Update post count for user
             $num_posts = $this->user_obj->getNumPosts();
             $num_posts++;
-            $update_query = mysqli_query($this->con, "UPDATE users SET num_posts = '$num_posts' WHERE username='$added_by'");
+            $update_query = mysqli_query(
+                $this->con, "UPDATE users 
+                            SET num_posts = '$num_posts' 
+                            WHERE username='$added_by'"
+            );
 
         }
     }

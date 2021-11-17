@@ -1,5 +1,7 @@
 <?php
-include("includes/header.php");
+
+
+require "includes/header.php";
 // session_destroy();              // destroy session
 
 ?>

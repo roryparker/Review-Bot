@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 ob_start(); // turns on output buffering
 session_start(); // start session for stored variables.
