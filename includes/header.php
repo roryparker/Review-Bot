@@ -41,13 +41,15 @@ else {
         </div>
 
         <nav>
-            <a href="<?php echo $userLoggedIn; ?>"> 
-                    <i class="fa-solid fa-house"></i> 
+            <a href="<?php echo $userLoggedIn; ?>">
+                <?php echo $user['first_name']; ?> 
             </a> <!-- links to profile page -->
+            <a href="index.php"> <i class="fa-solid fa-house"></i> </a>
             <a href="#"> <i class="fa-solid fa-user-group"></i> </a>
             <a href="#"> <i class="fa-solid fa-comment"></i> </a>
             <a href="#"> <i class="fa-solid fa-people-arrows-left-right"></i> </a>
             <a href="#"> <i class="fa-regular fa-face-pouting"></i> </a>
+            <a href="includes/handlers/logout.php"> <i class="fa-solid fa-right-from-bracket"></i> </a>
         </nav>
     </div>
 

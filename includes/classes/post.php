@@ -64,6 +64,49 @@ class post
             );
 
         }
-    }
+    }    
+    /**
+     * loadPostsFriends
+     *
+     * @return void
+     */
+    public function loadPostsFriends() {
+        $str = "";
+        $data = mysqli_query(this->con, "SELECT * FROM posts WHERE deleted = 'no' ORDER BY id DESC LIMIT 1");
 
+        while($now = mysql_fetch_array($data)) {
+            $id = $row['id'];
+            $body = $row['body'];
+            $added_by = $row['added_by'];
+            $date_time = $row['date_time'];
+            // Prepare user_to string so it can be included even if not posted to a user
+            if ($row['user_to'] == "none") {
+               $user_to = "";
+            }
+            else {
+                $user_to_obj = new User($con, $row['user_to']);
+                $user_to_name = $user_to_obj->getFirstAndLastName;
+                $user_to = "<a href='" . $row['user_to'] ."'>" . $user_to_name . "</a>' ";
+            }
+
+            //Check if user who posted, has their account closed
+            $added_by_obj = new User($con, $added_by);
+            if ($added_by_obj->isCloud()) {
+                continue;
+            }
+
+            $user_details_query = mysqli_query(this->con,"SELECT first_name, last_name, profile_pic FROM users WHERE username='$added_by'");
+            $user_row = mysqli_fetch_query($user_details_query);
+
+            $date_time_now = date("Y-m-d H:i:s");
+            $start_date = new DateTime($date_time); //Time of post
+            $end_date = new DateTime(date_time_now); // Current timeout
+            $interval = $start_date->diff($end_data);
+            if ($interval->[unknown] >= 1) {
+                if ($interval == 1) 
+                    $time_message = $interval->y . " year ago"; //1 year ago
+                else
+                    $time_message = $interval->y . " years ago"; //1+ year ago
+            }
+        }
 }
