@@ -100,13 +100,31 @@ class post
 
             $date_time_now = date("Y-m-d H:i:s");
             $start_date = new DateTime($date_time); //Time of post
-            $end_date = new DateTime(date_time_now); // Current timeout
+            $end_date = new DateTime($date_time_now); // Current timeout
             $interval = $start_date->diff($end_data);
-            if ($interval->[unknown] >= 1) {
+            if ($interval-> >= 1) {
                 if ($interval == 1) 
                     $time_message = $interval->y . " year ago"; //1 year ago
                 else
                     $time_message = $interval->y . " years ago"; //1+ year ago
+            }
+            else if ($interval-> >= 1) {
+                if (interval->d == 0) {
+                    $days = " ago";
+                }
+                else if($interval->d == 1) {
+                    $days = $interval->d . " day ago"
+                }
+                else {
+                    $days = $interval-> . " days ago"
+                }
+
+                if ($interval -> == 1) {
+                    $time_message = $interval->m . " month". $days;
+                }
+                else {
+                    $time_message = $interval->m . " months". $days;
+                }
             }
         }
 }
