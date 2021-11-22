@@ -1,16 +1,14 @@
-# The Truth - The Social Network that doesn't lie.
+# Warning - Just let others know
 
-This is a Social Network based on honest reviews of people and companies from other people.
-* Employee Life
+A social network that uses a messaging platform to warn others about individuals professional and personal behavior. 
+
+Warning helps individual users and businesses surround themselves with integrity inside and outside of work, while avoiding horrible and destructive parties leading to a toxic enviroment inside and outside of work. This network receives honest reviews from others in your professional and personal life. Reviews are seperated across two sections - 
+
+* Work Life
 * Personal Life 
 
-Social Media has allowed people to become hypocritical in certain aspects of relationships. They represent one thing online, while stating another offline. It's wrong. 
 
-Lying has become a serious problem in society. This aims to kill it.
-
-How it works - 
-
-"The Truth" is sperated into 3 app categories with self-explantory names.
+Then placed into 3 app categories with self-explantory names.
 
 Employr -
 
@@ -24,20 +22,7 @@ Asshole -
 
 * Asshole aims to help others stay away from dregs and losers (men and women) in our society. These reviews come from verified eye witness accounts. 
 
-Who are symptoms of dregs and losers?
-* Inconsistent.
-* They lie.
-* Constantly drag you down.
-* They cost you money.
-* They are always broke.
-* They are toxic.
-* They are a liability. (They don't make you happy, healthy, or wealthy)
-
 
 I used HTML, CSS, React, Javascript, and System Desgin principals using Amazon AWS to create this  reviews
 
-Completed Index page - 10/25/2021
 
-Completed Login page - 10/26/2021
-
-Updated Login page - 10/27
