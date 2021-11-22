@@ -126,5 +126,37 @@ class post
                     $time_message = $interval->m . " months". $days;
                 }
             }
-        }
+            else if ($interval->d >= 1) {
+                if($interval->d == 1) {
+                    $time_message ="Yesterday";
+                }
+                else {
+                    $time_message = $interval->d . " days ago";
+                }
+           else if ($interval->h >= 1) {
+            if($interval->h == 1) {
+                $time_message = $interval->h . "hour ago";
+            }
+            else {
+                $time_message = $interval->h " hours ago";
+             }
+            }
+            else if ($interval->i >= 1) {
+            if($interval->i == 1) {
+                $time_message = $interval->i . "minute ago";
+            }
+            else {
+                $time_message = $interval->i . " minutes ago";
+            }
+            else if ($interval->s < 30) {
+                if($interval->h == 1) {
+                    $time_message = "Posted Just Now";
+                }
+                else {
+                    $time_message = $interval->s . " seconds ago";
+                }
+            }   
+            $str .= <"div class=" 'status_post'>
+            
 }
+''
