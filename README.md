@@ -18,7 +18,7 @@ Koworkr -
 
 Annoying - 
 
-* Annoying aims to help others stay away from toxic enviroments. These reviews come from verified eye witness accounts. 
+* Annoying aims to reduce exposure to terrible professional and personal relationships. These reviews come from verified eye witness accounts. 
 
 
 I am using HTML, CSS, Javascript, PHP, and some ReactJS elements. I am also setting up the app to use System Desgin principals that I have gone over.
