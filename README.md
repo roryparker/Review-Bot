@@ -1,8 +1,6 @@
 # Warning - Just let others know
 
-A social network that uses a messaging platform to warn others about individuals professional and personal behavior. 
-
-Warning helps individual users and businesses surround themselves with integrity inside and outside of work, while avoiding horrible and destructive parties leading to a toxic enviroment inside and outside of work. This network receives honest reviews from others in your professional and personal life. Reviews are seperated across two sections - 
+A social network that uses a reveiw and messaging platform to provide details on professional and personal behavior. This leads to increased integrity inside and outside of work, while avoiding enviroments that are the opposite.This network receives honest reviews from others in your professional and personal life. Reviews are seperated across two sections - 
 
 * Work Life
 * Personal Life 
@@ -18,11 +16,10 @@ Koworkr -
 
 * Koworkr aims to stop workplace abuse by embbeding itself into the framework of prospective employees, current employees, and Human Resources.
 
-Asshole - 
+Annoying - 
 
-* Asshole aims to help others stay away from dregs and losers (men and women) in our society. These reviews come from verified eye witness accounts. 
+* Annoying aims to help others stay away from toxic enviroments. These reviews come from verified eye witness accounts. 
 
 
-I used HTML, CSS, React, Javascript, and System Desgin principals using Amazon AWS to create this  reviews
-
+I am using HTML, CSS, Javascript, PHP, and some ReactJS elements. I am also setting up the app to use System Desgin principals that I have gone over.
 
