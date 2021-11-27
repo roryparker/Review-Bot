@@ -42,7 +42,7 @@ else {
 
         <nav>
             <a href="<?php echo $userLoggedIn; ?>">
-                <?php echo $user['first_name']; ?> 
+                <?php echo ($_SESSION['first_name']); ?>                               <!-- Fixed getting first name issue from $user to $_SESSION https://stackoverflow.com/questions/37310702/notice-undefined-variable-username -->
             </a> <!-- links to profile page -->
             <a href="index.php"> <i class="fa-solid fa-house"></i> </a>
             <a href="#"> <i class="fa-solid fa-user-group"></i> </a>

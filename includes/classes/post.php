@@ -105,61 +105,67 @@ class post
             $start_date = new DateTime($date_time); //Time of post
             $end_date = new DateTime($date_time_now); // Current timeout
             $interval = $start_date->diff($end_data);
-            if ($interval-> >= 1) {
+            if ($interval >= 1) {
                 if ($interval == 1) 
-                    $time_message = $interval->y . " year ago"; //1 year ago
+                    $time_message = $interval -> y . " year ago"; //1 year ago
                 else
-                    $time_message = $interval->y . " years ago"; //1+ year ago
+                    $time_message = $interval -> y . " years ago"; //1+ year ago
             }
-            else if ($interval-> >= 1) {
-                if (interval->d == 0) {
+            else if ($interval >= 1) {
+                if (interval -> d == 0) {
                     $days = " ago";
                 }
                 else if($interval->d == 1) {
-                    $days = $interval->d . " day ago"
+                    $days = $interval -> d . " day ago";
                 }
                 else {
-                    $days = $interval-> . " days ago"
+                    $days = $interval -> d . " days ago";
                 }
 
-                if ($interval -> == 1) {
-                    $time_message = $interval->m . " month". $days;
+                if ($interval == 1) {
+                    $time_message = $interval -> m . " month" . $days;
                 }
                 else {
-                    $time_message = $interval->m . " months". $days;
+                    $time_message = $interval -> m . " months" . $days;
                 }
             }
-            else if ($interval->d >= 1) {
-                if($interval->d == 1) {
+            else if ($interval -> d >= 1) {
+                if($interval -> d == 1) {
                     $time_message ="Yesterday";
                 }
                 else {
                     $time_message = $interval->d . " days ago";
                 }
-           else if ($interval->h >= 1) {
-            if($interval->h == 1) {
-                $time_message = $interval->h . "hour ago";
+            }    
+            
+            else if ($interval -> h >= 1) {
+                if($interval -> h == 1) {
+                    $time_message = $interval -> h . "hour ago";
+                }
+                else {
+                    $time_message = $interval -> h . " hours ago";
+                }
             }
-            else {
-                $time_message = $interval->h " hours ago";
-             }
-            }
-            else if ($interval->i >= 1) {
-            if($interval->i == 1) {
-                $time_message = $interval->i . "minute ago";
-            }
-            else {
-                $time_message = $interval->i . " minutes ago";
-            }
+            
+            else if ($interval -> i >= 1) {
+                 if($interval -> i == 1) {
+                    $time_message = $interval -> i . "minute ago";
+                }
+                else {
+                    $time_message = $interval -> i . " minutes ago";
+                }
+            }    
+
             else if ($interval->s < 30) {
                 if($interval->h == 1) {
                     $time_message = "Posted Just Now";
                 }
                 else {
-                    $time_message = $interval->s . " seconds ago";
+                    $time_message = $interval -> s . " seconds ago";
                 }
-            }   
-            $str .= <"div class= 'status_post'>
+            }
+
+            $str .= " <div class= 'status_post'>
                         <div class= 'post_profile_pic'>
                           <img src= 'profile_pic' width='50'>
                         </div>
@@ -173,7 +179,7 @@ class post
                             <br>
                         </div>
                     </div>
-                    <hr>";
+                    <hr> ";
             
             }
         }    
