@@ -1,6 +1,6 @@
-# Warning - Just let others know
+# Reveiw Bot - Just let others know
 
-A social network that uses a reviEw and messaging system to provide details on professional and personal behavior. This leads to increased integrity inside and outside of work, while avoiding enviroments that are the opposite.This network receives honest reviews from others in your professional and personal life. Reviews are seperated across two sections - 
+A social network that uses a review and messaging system to provide details on professional and personal behavior. This leads to increased integrity inside and outside of work, while avoiding enviroments that are the opposite.This network receives honest reviews from others in your professional and personal life. Reviews are seperated across two sections - 
 
 * Work Life
 * Personal Life 
